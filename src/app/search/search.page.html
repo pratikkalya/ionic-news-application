@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+
+          <ion-searchbar [(ngModel)]="search.query" name="query" placeholder="Search" (search)="searchByKeyword($event)"></ion-searchbar>
+
+          <!-- <form (ngSubmit)="logForm()">
+              <ion-item>
+                    <ion-input type="text" [(ngModel)]="search.query" name="query" placeholder="Search" ></ion-input>&nbsp;
+                    <button ion-button type="submit">search</button>
+                    
+              </ion-item>
+            </form> -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    
+    <ion-card *ngFor = "let articles of topics?.articles ">
+          <ion-card-content>
+          <ion-img [src]="articles.urlToImage"></ion-img>
+         <ion-card-title>{{articles.title}}</ion-card-title>
+         <p>{{articles.content}}</p>
+      </ion-card-content>
+</ion-card>
+</ion-content>
+  

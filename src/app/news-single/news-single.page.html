@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><h1>{{articles.title}}</h1></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+ 
+<ion-card>
+    <ion-img [src]="articles.urlToImage"></ion-img>
+      <ion-card-content>
+        <ion-card-title>{{articles.title}}</ion-card-title>
+         <p>{{articles.content}}</p>
+      </ion-card-content>
+      
+</ion-card>
+</ion-content>

@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "Newspaper",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
